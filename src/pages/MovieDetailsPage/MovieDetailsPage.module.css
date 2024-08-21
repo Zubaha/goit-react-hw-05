@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  display: inline-flex;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.image {
+  width: 400px;
+}
+
+.wrapper {
+  padding: 20px 0;
+  display: flex;
+}
+
+.wrapperDetail {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

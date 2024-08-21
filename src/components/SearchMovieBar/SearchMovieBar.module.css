@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  gap: 15px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 250px;
+  font-size: 16px;
+}
+.button {
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 5px;
+}
