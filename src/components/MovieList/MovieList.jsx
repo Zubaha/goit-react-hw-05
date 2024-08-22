@@ -1,4 +1,4 @@
-import MovieBackdropPath from "../MovieBackdropPath/MovieBackdropPath";
+import MovieBackdropPath from "../MovieLink/MovieLink";
 
 function MovieList({ movies }) {
   return (

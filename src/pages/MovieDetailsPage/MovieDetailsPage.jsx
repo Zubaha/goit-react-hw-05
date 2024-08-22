@@ -53,7 +53,7 @@ function MovieDetailsPage() {
             {release_date && `(${release_date.getFullYear()})`}
           </h2>
           <p>
-            Use Score:{" "}
+            User Score:{" "}
             {voteAverage !== null ? `${voteAverage}%` : "Not Available"}
           </p>
           <h3>Overview:</h3>

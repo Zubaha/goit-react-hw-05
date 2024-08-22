@@ -1,8 +1,7 @@
-import clsx from "clsx";
-import { NavLink, Route, Routes } from "react-router-dom";
-import css from "./App.module.css";
+import { Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 import { lazy, Suspense } from "react";
+import Navigation from "./components/Navigation/Navigation";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
@@ -19,20 +18,7 @@ function App() {
   return (
     <div>
       <header>
-        <nav className={css.nav}>
-          <NavLink
-            className={({ isActive }) => clsx(css.link, isActive && css.active)}
-            to="/"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => clsx(css.link, isActive && css.active)}
-            to="/movies"
-          >
-            Movies
-          </NavLink>
-        </nav>
+        <Navigation />
       </header>
       <main>
         <Suspense fallback={<Loader />}>
